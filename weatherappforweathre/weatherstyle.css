@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+}
+
+.container {
+    width: 450px;
+    background: linear-gradient(130deg, rgb(43, 99, 218), rgb(22, 22, 220));
+    color: white;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    padding: 12px 22px;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 30px; /* Changed border-radius value */
+    font-size: 18px;
+    background-color: lightcyan;
+    color: black;
+}
+
+.search img {
+    max-width: 30px; /* Adjust image size */
+    height: auto;
+    margin-right: 1px; /* Add some margin between input and image */
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.weather {
+    text-align: center; /* Align the content to the center */
+}
+
+.weather img {
+    width: 150px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the image a block element */
+    margin: 20px auto 0; /* Center the image horizontally and add space from the top */
+}
+
+.weather .icon {
+    margin-top: 20px;
+    width: 170px;
+
+}
+
+.weather h1 {
+    font-size: 70px;
+    font-weight: 500;
+
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between; /* Align columns at each end */
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 22px;
+}

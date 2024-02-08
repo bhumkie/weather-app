@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weatherstyle.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+         <div class="search">
+            <input type="text" placeholder="Enter City Name">
+            <button><img src="search-interface-symbol.png" alt="Weather"></button>
+        </div>
+        <div class="weather">
+            <img src="cloud-humid.png" class="icon" alt="">
+            <h1 class="celsius">22°c</h1>
+            <h2 class="City">Nagpur</h2>
+            <div class="detail">
+                <div class="col">
+                    <img src="humid_real.png" alt="">
+                    <div class="humidity">
+                        <p class="hum">20%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="cloud-windy.png" alt="">
+                    <div class="wind">
+                        <p class="win">20k/h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const apiKey = "594f3f9616a355b95f56ef762ca8ba81";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=nagpur";
+
+        async function checkWeather(){
+            const response = await fetch(apiUrl + `&appid=${apiKey}`);
+            var data = await response.json();
+
+            console.log(data);
+        }
+    </script>
+</body>
+</html>
+
+
+
